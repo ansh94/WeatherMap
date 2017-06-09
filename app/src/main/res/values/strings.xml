@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherMap</string>
+    <string name="title_activity_maps">Location Map</string>
+    <string name="location_details">Location Details</string>
+    <string name="my_location_polyline">Polyline - My Locations</string>
+    <string name="name">Name:</string>
+    <string name="main_weather">Main Weather: </string>
+    <string name="description">Description: </string>
+    <string name="temperature">Temperature: </string>
+    <string name="pressure">Pressure: </string>
+    <string name="humidity">Humidity: </string>
+    <string name="visibility">Visibility: </string>
+    <string name="show_location_click_on_icon">Show Location (Click on icon): </string>
+    <string name="enter_the_city_name">Please enter the city name:</string>
+    <string name="city">City</string>
+    <string name="submit">Submit</string>
+    <string name="button_x">Button X</string>
+</resources>

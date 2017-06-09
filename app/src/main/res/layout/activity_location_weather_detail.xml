@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="com.anshdeep.weathermap.LocationWeatherDetailActivity">
+
+    <TextView
+        android:id="@+id/cityNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/cityNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/cityNameLabel"
+        android:textSize="22sp"
+        tools:text="London"/>
+
+    <TextView
+        android:id="@+id/mainWeatherLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityNameLabel"
+        android:layout_marginTop="15dp"
+        android:text="@string/main_weather"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/mainWeatherValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityNameLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/mainWeatherLabel"
+        android:textSize="22sp"
+        tools:text="Rain"/>
+
+    <TextView
+        android:id="@+id/weatherDescLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainWeatherLabel"
+        android:layout_marginTop="15dp"
+        android:text="@string/description"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/weatherDescValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainWeatherLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/weatherDescLabel"
+        android:textSize="22sp"
+        tools:text="Showers"/>
+
+    <TextView
+        android:id="@+id/tempLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherDescLabel"
+        android:layout_marginTop="15dp"
+        android:text="@string/temperature"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/tempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherDescLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/tempLabel"
+        android:textSize="22sp"
+        tools:text="290.53"/>
+
+    <TextView
+        android:id="@+id/pressureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempLabel"
+        android:layout_marginTop="15dp"
+        android:text="@string/pressure"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/pressureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/pressureLabel"
+        android:textSize="22sp"
+        tools:text="1009"/>
+
+    <TextView
+        android:id="@+id/humidityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressureLabel"
+        android:layout_marginTop="15dp"
+        android:text="@string/humidity"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/humidityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressureLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/humidityLabel"
+        android:textSize="22sp"
+        tools:text="68"/>
+
+    <TextView
+        android:id="@+id/visibilityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidityLabel"
+        android:layout_marginTop="15dp"
+        android:text="@string/visibility"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/visibilityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidityLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/visibilityLabel"
+        android:textSize="22sp"
+        tools:text="10000"/>
+
+    <TextView
+        android:id="@+id/showLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/visibilityLabel"
+        android:layout_marginTop="15dp"
+        android:text="@string/show_location_click_on_icon"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+
+    <ImageButton
+        android:id="@+id/locationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/visibilityLabel"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/showLocationLabel"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_location_on_black_24dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
